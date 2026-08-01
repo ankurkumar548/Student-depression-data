@@ -2,23 +2,28 @@
 
 ## Project Overview
 
-This project analyzes factors associated with depression among students using Tableau. It explores how academic pressure, study satisfaction, sleep duration, dietary habits, financial stress, study hours, family history of mental illness, and suicidal thoughts may relate to student depression.
+This project explores different academic, lifestyle, and financial factors associated with student mental health using Tableau.
 
-The project includes an interactive Tableau dashboard that helps users explore patterns and relationships within a dataset containing **502 student records**.
+The analysis examines academic pressure, financial stress, study satisfaction, study hours, sleep duration, dietary habits, family history of mental illness, suicidal thoughts, and depression status.
+
+An interactive Tableau dashboard was created to present the distribution of students across these factors in a clear and understandable format.
 
 ## Dashboard Preview
 
-![Student Depression Analysis Dashboard](images/student-count-dashboard.png)
+![Student Count Analysis Dashboard](student-count-dashboard.png)
 
-## Project Files
+## Project Information
 
-- **Tableau Workbook:** `First Project.twbx`
-- **Original Data Source:** `Depression_students1.csv`
-- **Dataset Size:** 502 records
-- **Workbook Type:** Tableau Packaged Workbook
-- **Data Storage:** Embedded Tableau Hyper Extract
+| Detail | Information |
+|---|---|
+| **Tableau Workbook** | `First Project tableau Dashboard.twbx` |
+| **Dataset** | `Depression+Student+Dataset.csv` |
+| **Dataset Size** | 502 student records |
+| **Workbook Type** | Tableau Packaged Workbook (`.twbx`) |
+| **Data Storage** | Embedded Tableau Hyper Extract |
+| **Visualization Tool** | Tableau |
 
-The dataset is embedded inside the `.twbx` file, so the workbook can be opened without separately downloading the CSV file.
+Because the data extract is embedded inside the packaged Tableau workbook, the project can be opened without separately connecting the CSV file.
 
 ## Dataset Features
 
@@ -26,153 +31,193 @@ The dataset is embedded inside the `.twbx` file, so the workbook can be opened w
 |---|---|
 | `Gender` | Gender of the student |
 | `Age` | Age of the student |
-| `Age_Group` | Age-group category |
-| `Academic_Pressure` | Level of academic pressure |
-| `Study_Satisfaction` | Satisfaction level with studies |
+| `Age_Group` | Age-group category of the student |
+| `Academic_Pressure` | Reported level of academic pressure |
+| `Study_Satisfaction` | Student's satisfaction with their studies |
 | `Study_Hours` | Number of hours spent studying |
 | `Sleep_Duration` | Average sleep-duration category |
-| `Dietary_Habits` | Quality of dietary habits |
-| `Financial_Stress` | Level of financial stress |
-| `Family_History_of_Mental_Illness` | Family history of mental illness |
+| `Dietary_Habits` | Quality of the student's dietary habits |
+| `Financial_Stress` | Reported level of financial stress |
+| `Family_History_of_Mental_Illness` | Whether the student has a family history of mental illness |
 | `Have_you_ever_had_suicidal_thoughts` | Reported history of suicidal thoughts |
 | `Depression` | Depression status of the student |
-| `index_column` | Unique record index |
+| `index_column` | Unique index assigned to each student record |
 
 ## Project Objectives
 
-- Analyze depression patterns among students.
-- Examine academic pressure across the student population.
-- Understand the distribution of financial stress.
-- Compare depression across different genders and age groups.
-- Analyze students based on sleep duration and dietary habits.
-- Study the relationship between study satisfaction and student count.
-- Explore the distribution of students according to study hours.
-- Identify factors that may be associated with a higher risk of depression.
+The main objectives of this project are:
+
+- Analyze the distribution of students across different academic-pressure levels.
+- Examine the financial-stress levels reported by students.
+- Compare students across different study-satisfaction levels.
+- Understand the sleep-duration patterns of students.
+- Analyze the distribution of students according to study hours.
+- Explore factors that may be associated with student depression.
+- Present multiple student-related factors through an interactive Tableau dashboard.
+- Make the dataset easier to understand using visual analysis.
 
 ## Dashboard Visualizations
 
 ### 1. Academic Pressure Analysis
 
-This visualization shows the distribution of students across five academic-pressure levels. Academic-pressure level 3 contains the highest number of students, with **125 records**.
+This visualization displays the number of students across five academic-pressure levels.
 
-![Academic Pressure Analysis](images/academic-pressure-analysis.png)
+Academic-pressure level 3 contains the highest number of students, with **125 students**.
+
+![Academic Pressure Analysis](academic-pressure-analysis.png)
 
 ### 2. Financial Stress Analysis
 
-This visualization presents the number of students at each financial-stress level. Financial-stress level 1 contains the highest number of students, with **110 records**.
+This visualization presents the distribution of students across five financial-stress levels.
 
-![Financial Stress Analysis](images/financial-stress-analysis.png)
+Financial-stress level 1 contains the highest number of students, with **110 students**.
+
+![Financial Stress Analysis](financial-stress-analysis.png)
 
 ### 3. Study Satisfaction Analysis
 
-This chart compares student counts across five study-satisfaction levels. Study-satisfaction level 4 has the highest student count, with **116 records**.
+This bar chart compares the number of students across five study-satisfaction levels.
 
-![Study Satisfaction Analysis](images/study-satisfaction-analysis.png)
+Study-satisfaction level 4 contains the highest number of students, with **116 students**.
+
+![Study Satisfaction Analysis](study-satisfaction-analysis.png)
 
 ### 4. Sleep Duration Analysis
 
-This visualization groups students according to their reported sleep duration. The categories **7–8 hours** and **more than 8 hours** contain the highest counts, with **128 students each**.
+This visualization groups students according to their reported sleep duration.
 
-![Sleep Duration Analysis](images/sleep-duration-analysis.png)
+The **7–8 hours** and **more than 8 hours** categories have the highest counts, with **128 students each**.
+
+![Sleep Duration Analysis](sleep-duration-analysis.png)
 
 ### 5. Study Hours Analysis
 
-This area chart displays the distribution of students according to their daily study hours. The highest observed category contains **53 students**.
+This area chart displays the distribution of students according to their study-hour values.
 
-![Study Hours Analysis](images/study-hours-analysis.png)
+The highest observed study-hours category contains **53 students**, while the lowest observed category contains **29 students**.
+
+![Study Hours Analysis](study-hours-analysis.png)
 
 ### 6. Combined Student Count Dashboard
 
-The final Tableau dashboard combines financial stress, study hours, study satisfaction, sleep duration, and academic pressure into a single analytical view.
+The final dashboard combines the following five visualizations into one analytical view:
 
-![Combined Student Count Dashboard](images/student-count-dashboard.png)
+- Financial stress
+- Study hours
+- Study satisfaction
+- Sleep duration
+- Academic pressure
+
+This combined dashboard makes it easier to compare the distribution of students across multiple academic and lifestyle factors.
+
+![Combined Student Count Dashboard](student-count-dashboard.png)
 
 ## Key Findings
 
-- Academic-pressure level 3 has the highest count with **125 students**.
-- Financial-stress level 1 has the highest count with **110 students**.
-- Study-satisfaction level 4 has the highest count with **116 students**.
-- Both the **7–8 hours** and **more than 8 hours** sleep categories contain **128 students**.
-- Student distribution varies across study-hour categories, with the highest category containing **53 students**.
-- The dashboard provides a consolidated view of the academic and lifestyle characteristics represented in the dataset.
+- The dataset contains **502 student records**.
+- Academic-pressure level 3 has the highest count, with **125 students**.
+- Academic-pressure level 2 has the lowest count, with **88 students**.
+- Financial-stress level 1 has the highest count, with **110 students**.
+- Financial-stress level 4 has the lowest count, with **94 students**.
+- Study-satisfaction level 4 has the highest count, with **116 students**.
+- Study-satisfaction level 1 has the lowest count, with **86 students**.
+- The 7–8 hours and more-than-8-hours sleep categories contain **128 students each**.
+- The 5–6 hours and less-than-5-hours categories contain **123 students each**.
+- The highest student count in the study-hours analysis is **53 students**.
+- The dashboard provides a consolidated overview of academic, financial, and lifestyle-related student characteristics.
 
-> These observations describe the distribution of records in the dataset. They do not prove that any factor causes depression.
+> These findings describe patterns and distributions within the dataset. They do not prove that any particular factor causes depression.
 
 ## Key Analysis Areas
 
-- Depression distribution by gender
-- Depression distribution by age group
-- Academic pressure and student count
-- Financial stress and student count
-- Sleep duration and mental health
+- Student distribution by academic pressure
+- Student distribution by financial stress
+- Student distribution by study satisfaction
+- Student distribution by study hours
+- Student distribution by sleep duration
+- Depression patterns by gender
+- Depression patterns by age group
 - Dietary habits and depression
-- Study satisfaction and study hours
 - Family history of mental illness
 - History of suicidal thoughts
 
 ## Tools and Technologies
 
-- Tableau
-- Tableau Hyper Extract
-- CSV
-- Data Visualization
-- Exploratory Data Analysis
-- Dashboard Design
+- **Tableau**
+- **Tableau Hyper Extract**
+- **CSV**
+- **Data Visualization**
+- **Exploratory Data Analysis**
+- **Dashboard Design**
+- **Data Interpretation**
 
 ## How to Run the Project
 
-1. Clone this repository:
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Student-Depression-Analysis.git
+git clone https://github.com/ankurkumar548/Student-depression-data.git
 ```
 
-2. Open the cloned repository:
+### 2. Open the project folder
 
 ```bash
-cd Student-Depression-Analysis
+cd Student-depression-data
 ```
 
-3. Install [Tableau Public](https://public.tableau.com/) or Tableau Desktop.
+### 3. Install Tableau
 
-4. Open the packaged workbook:
+Download and install either:
+
+- [Tableau Public](https://public.tableau.com/)
+- Tableau Desktop
+
+### 4. Open the packaged workbook
+
+Open the following file in Tableau:
 
 ```text
-First Project.twbx
+First Project tableau Dashboard.twbx
 ```
 
-5. Open the dashboard and interact with the available worksheets and visualizations.
+### 5. Explore the dashboard
+
+Open the dashboard and interact with the available worksheets and visualizations.
 
 ## Repository Structure
 
 ```text
-Student-Depression-Analysis/
-├── First Project.twbx
-├── Depression_students1.csv
-├── README.md
-└── images/
-    ├── academic-pressure-analysis.png
-    ├── financial-stress-analysis.png
-    ├── study-satisfaction-analysis.png
-    ├── sleep-duration-analysis.png
-    ├── study-hours-analysis.png
-    └── student-count-dashboard.png
+Student-depression-data/
+├── Depression+Student+Dataset.csv
+├── First Project tableau Dashboard.twbx
+├── academic-pressure-analysis.png
+├── financial-stress-analysis.png
+├── sleep-duration-analysis.png
+├── student-count-dashboard.png
+├── study-hours-analysis.png
+├── study-satisfaction-analysis.png
+└── README.md
 ```
 
 ## Future Improvements
 
-- Add interactive filters for gender, age group, and depression status.
 - Add KPI cards for total students, depressed students, and depression rate.
-- Analyze depression status directly across each contributing factor.
-- Improve chart labels and standardize the dashboard colour palette.
-- Replace abbreviated labels such as `SC`, `AP`, and `FS` with descriptive names.
-- Add calculated fields for percentage-based comparisons.
+- Add filters for gender, age group, and depression status.
+- Compare depression status directly with academic pressure.
+- Compare depression status directly with financial stress.
+- Analyze depression according to sleep duration and dietary habits.
+- Add percentage-based comparisons instead of only student counts.
+- Replace abbreviated labels such as `SC`, `AP`, `FS`, `SS`, and `SD` with complete descriptive labels.
+- Improve the dashboard colour palette and formatting.
+- Add interactive tooltips for each visualization.
 - Publish the completed dashboard on Tableau Public.
-- Add a direct Tableau Public dashboard link to the repository.
+- Add a live Tableau Public dashboard link to the repository.
 
 ## Disclaimer
 
-This project was created for educational and exploratory purposes only. Its findings should not be used for medical diagnosis or treatment. Relationships observed in the dataset do not necessarily indicate causation.
+This project was created for educational and exploratory purposes only.
+
+The observations presented in this project should not be used for medical diagnosis, treatment, or professional mental-health advice. Relationships observed in the dataset do not necessarily indicate causation.
 
 ## Author
 
